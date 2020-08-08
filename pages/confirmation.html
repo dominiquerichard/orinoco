@@ -19,7 +19,7 @@
 						<div class="col-sm-8 col-md-7 py-4">
 							<h4 class="text-white">Orinoco</h4>
 							<p class="text-muted">Notre credo ? Se démarquer des grands sites de e-commerce en créant des applications thématiques ne vendant qu’un seul groupe de produits. C'est ainsi que sont nés <strong>Oribook</strong> pour les livres et <strong>Oritextil</strong> pour les vêtements.</p><br>
-							<p class="text-white">Dernière étape pour commander !</p>
+							<p class="text-white">Votre commande est confirmée !</p>
 						</div>
 						<div class="col-sm-4 offset-md-1 py-4">
 							<h4 class="text-white">Contact</h4>
@@ -57,26 +57,27 @@
 					</a>
 				</div>
 				<div class="col-9">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<nav aria-label="commande"> <!-- Breadcrumb -->
-									<ul class="pagination pagination-sm">
-										<li class="page-item">
-											<p class="page-link ml-3 mr-3">valider votre panier<i class="fas fa-chevron-right ml-2"></i></p>
-										</li>
-										<li class="page-item">
-											<p class="page-link bg-info text-white mr-3"><strong>passer votre commande</strong><i class="fas fa-chevron-down ml-2"></i></i></p>
-										</li>
-										<li class="page-item">
-											<p class="page-link" mr-3>confirmation de commande<i class="fas fa-chevron-right ml-2"></i></p>
-										</li>
-									</ul>
-								</nav> <!-- /Breadcrumb -->
-							</div>
-							<div class="col-12">
-								<h1 class="lead text-center"><strong>Récapitulatif de votre panier :</strong></h1>
-							</div>
+					<div class="row">
+						<div class="col-12 d-flex justify-content-center">
+							<nav aria-label="commande"> <!-- Breadcrumb -->
+								<ul class="pagination pagination-sm">
+									<li class="page-item">
+										<p class="page-link ml-3 mr-3">valider votre panier<i class="fas fa-chevron-right ml-2"></i></p>
+									</li>
+									<li class="page-item">
+										<p class="page-link mr-3">passer votre commande<i class="fas fa-chevron-right ml-2"></i></p>
+									</li>
+									<li class="page-item">
+										<p class="page-link bg-info text-white" mr-3><strong>confirmation de commande</strong><i class="fas fa-chevron-down ml-2"></i></p>
+									</li>
+								</ul>
+							</nav> <!-- /Breadcrumb -->
 						</div>
+						<div class="col-12">
+							<h1 class="text-center" pb-4>Orinoco vous remercie pour votre achat</h1>
+							<h2 class="lead text-center"><strong>Récapitulatif de votre commande n° 15-156/Z013 :</strong></h2>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -107,7 +108,7 @@
 								</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="../pages/confirmation.html">
+							<a class="nav-link" href="#">
 								<i class="fas fa-shopping-cart mr-2"></i>
 								<span id="basket">0</span>
 							</a>
@@ -117,7 +118,10 @@
 				<div class="col-9">
 					<div class="row">
 						<table class="table table-sm table-hover">
-							<caption><small class="text-muted">Votre panier est prêt</small></caption>
+							<caption>
+								<small class="text-muted"><i class="far fa-check-circle mr-2"></i>Votre commande est en cours de préparation</small><br>
+								<small class="text-muted"><i class="far fa-check-circle mr-2"></i>Un email de confirmation vous a été envoyé</small>
+							</caption>
 							<thead>
 								<tr class="bg-info text-center text-white">
 									<th>Articles</th>
@@ -133,11 +137,10 @@
 									<td>1</td>
 									<td>29.99</td>
 									<td>29.99</td>
-									<td><button type="button" class="btn btn-sm btn-info">Suppr</button></td>
 								</tr>
 							</tbody>
 						</table>
-						<table class="table mt-4">
+						<table class="table">
 							<thead>
 								<tr>
 									<th>Total de la commande TTC</th>
@@ -146,79 +149,16 @@
 							</thead>
 						</table>
 						<div class="col-12 text-right">
-							<button type="button" class="btn btn-sm btn-info" onclick="location.href='../index.html';">Poursuivre mes achats</button>
+							<button type="button" class="btn btn-sm btn-info" onclick="location.href='../index.html';">Poursuivre sur Orinoco</button>
 						</div>
-						<div class="col-12">
-							<h2 class="lead text-center py-5"><strong>Adresse d'expédition :</strong></h2>
-						</div>
-						<div class="col-12">
-	   						<form>
-					    		<div class="form-row">
-					    			<div class="form-group col-md-6">
-					    				<label for="prenom">Prénom</label>
-					    				<input type="text" class="form-control" id="prenom" placeholder="Votre Prénom">
-									</div>
-					    			<div class="form-group col-md-6">
-					    				<label for="prenom">Nom</label>
-					    				<input type="text" class="form-control" id="nom" placeholder="Votre nom">
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group col-md-8">
-										<label for="email">email</label>
-										<input type="text" class="form-control" id="email" placeholder="exemple@email.com">
-									</div>
-									<div class="form-group col-md-4">
-										<label for="telephone">Téléphone</label>
-										<input type="text" class="form-control" id="tel" placeholder="06 xx xx xx xx">
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group col-md-2">
-										<label for="numero">N°</label>
-										<input type="text" class="form-control" id="numero" placeholder="XX">
-									</div>
-									<div class="form-group col-md-10">
-										<label for="adresse">Adresse</label>
-										<input type="text" class="form-control" id="adresse" placeholder="Voie">
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group col-md-6">
-						    			<label for="ville">Ville</label>
-						    			<input type="text" class="form-control" id="prenom" placeholder="Ville">
-						    		</div>
-						    		<div class="form-group col-md-2">
-						    			<label for="codepostal">Code Postal</label>
-						    			<input type="text" class="form-control" id="cp" placeholder="XX 000">
-						    		</div>
-						    		<div class="form-group col-md-4">
-						    				<label for="pays">Pays</label>
-						    				<input type="text" class="form-control" id="cp" placeholder="Pays">
-						    		</div>
-						    	</div>
-						    	<div class="form-check pb-5">
-						    		<input type="radio" name="btradio" id="oui" value="oui">
-						    		<label for="validationcgv" class="form-check-label">J'accepte sans réserves tous les termes présents dans les <a href="#" target="blank">Conditions Générales de Vente</a> d'Orinoco France</label>
-						    	</div> <!-- type="button" à remplacer par type="submit" -->
-						    	<button type="button" class="btn btn-info float-right" onclick="location.href='../pages/confirmation.html';">Valider ma commande</button>
-						    </form>
-					    </div>
 					</div>
-			    </div>
+				</div>
 			</div>
-		</div>
 		<footer class="text-muted py-5"> <!-- footer  -->
 			<div class="container">
-				<div class="row text-white bg-dark py-1">
-					<div class="col-5">
-						<small class="text-white ml-4">Commandes franco de port</small>
-					</div>
-					<div class="col-4">
-						<small class="text-whites">Garantie 28 jours</small>
-					</div>
-					<div class="col-3">
-						<small class="text-right mr-4">Consultez nos<i class="fas fa-chevron-right ml-2 mr-2"></i><a class="text-white" href="#">CGV</a></small>
+				<div class="row bg-dark py-1">
+					<div class="col">
+						<small class="tmr-4 float-right"><a class="text-white" href="../index.html">Home</a></small>
 					</div>
 				</div>
 			</div>

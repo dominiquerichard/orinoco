@@ -51,44 +51,45 @@
 		</header> <!-- /header navbar toggle-->
 		<div class="container my-4">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-12 col-lg-3 mb-3">
 					<a href="../index.html">
 					    <img src="../images/logo.png" class="img-fluid img-thumbnail" alt="logo de l'entreprise orinoco">
 					</a>
 				</div>
-				<div class="col-9">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<nav aria-label="commande"> <!-- Breadcrumb -->
-									<ul class="pagination pagination-sm">
-										<li class="page-item">
-											<p class="page-link ml-3 mr-3">valider votre panier<i class="fas fa-chevron-right ml-2"></i></p>
-										</li>
-										<li class="page-item">
-											<p class="page-link bg-info text-white mr-3"><strong>passer votre commande</strong><i class="fas fa-chevron-down ml-2"></i></i></p>
-										</li>
-										<li class="page-item">
-											<p class="page-link" mr-3>confirmation de commande<i class="fas fa-chevron-right ml-2"></i></p>
-										</li>
-									</ul>
-								</nav> <!-- /Breadcrumb -->
-							</div>
-							<div class="col-12">
-								<h1 class="lead text-center"><strong>Récapitulatif de votre panier :</strong></h1>
-							</div>
+				<div class="col-12 col-lg-9">
+					<div class="row">
+						<div class="col-12 d-flex justify-content-center">
+							<nav aria-label="panier"> <!-- Breadcrumb -->
+								<ul class="pagination pagination-sm d-flex flex-column flex-sm-row">
+									<li class="page-item mx-1">
+										<p class="page-link text-center">Valider votre panier<i class="fas fa-chevron-right ml-2"></i></p>
+									</li>
+									<li class="page-item mx-1">
+										<p class="page-link bg-info text-white text-center"><strong>Passer votre commande</strong><i class="fas fa-chevron-down ml-2"></i></p>
+									</li>
+									<li class="page-item mx-1">
+										<p class="page-link text-center">Confirmation de commande<i class="fas fa-chevron-right ml-2"></i></p>
+									</li>
+								</ul>
+							</nav> <!-- /Breadcrumb -->
 						</div>
+						<div class="col-12">
+							<h1 class="lead text-center"><strong>Récapitulatif de votre panier :</strong></h1>
+						</div>
+					</div>
 				</div>
+				
 			</div>
 		</div>
 		<div class="container"> <!-- Header nav avec logo -->
    			<div class="row">
-			    <div class="col-3"> <!-- menu avec dropdown -->
-					<ul class="nav nav-tabs justify-content-center flex-column">
+			    <div class="col-12 col-lg-3 pb-3"> <!-- menu avec dropdown -->
+					<ul class="nav nav-tabs justify-content-center flex-lg-column flex-sm-row">
 						<li class="nav-item">
-							<a class="nav-link bg-info text-white mr-3" href="../index.html">ours en peluche</a>
+							<a class="nav-link bg-info text-white" href="../index.html">ours en peluche</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle mr-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">boutiquons ensemble</a>
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">boutiques</a>
 								<div class="dropdown-menu">
 									<a class="dropdown-item text-info" href="#">camera vintage</a>
 									<a class="dropdown-item text-info" href="#">meuble en chêne</a>
@@ -98,32 +99,32 @@
 								</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle mr-5" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ref</a>
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">infos</a>
 								<div class="dropdown-menu">
-									<a class="dropdown-item text-primary" href="#">quality</a>
+									<a class="dropdown-item text-primary" href="#">qualité</a>
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#">cgv</a>
 									<a class="dropdown-item" href="#">job</a>
 								</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="../pages/confirmation.html">
-								<i class="fas fa-shopping-cart mr-2"></i>
+							<a class="nav-link" href="../pages/order.html">
+								<i class="fas fa-shopping-cart"></i>
 								<span id="basket">0</span>
 							</a>
 						</li>
 					</ul>
 				</div> <!-- /menu -->
-				<div class="col-9">
+				<div class=" col-12 col-lg-9 py-2 px-5">
 					<div class="row">
 						<table class="table table-sm table-hover">
-							<caption><small class="text-muted">Votre panier est prêt</small></caption>
+							<caption>
+								<small class="text-muted">Votre panier est prêt</small></caption>
 							<thead>
 								<tr class="bg-info text-center text-white">
 									<th>Articles</th>
-									<th>Quantité</th>
+									<th>Qté</th>
 									<th>Prix</th>
-									<th>Sous-total</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -131,7 +132,6 @@
 								<tr class="text-center"> 
 									<td>Le classique</td>
 									<td>1</td>
-									<td>29.99</td>
 									<td>29.99</td>
 									<td><button type="button" class="btn btn-sm btn-info">Suppr</button></td>
 								</tr>
@@ -184,11 +184,11 @@
 									</div>
 								</div>
 								<div class="form-row">
-									<div class="form-group col-md-6">
+									<div class="form-group col-md-5">
 						    			<label for="ville">Ville</label>
 						    			<input type="text" class="form-control" id="prenom" placeholder="Ville">
 						    		</div>
-						    		<div class="form-group col-md-2">
+						    		<div class="form-group col-md-3">
 						    			<label for="codepostal">Code Postal</label>
 						    			<input type="text" class="form-control" id="cp" placeholder="XX 000">
 						    		</div>
@@ -208,17 +208,17 @@
 			    </div>
 			</div>
 		</div>
-		<footer class="text-muted py-5"> <!-- footer  -->
+		<footer class="text-muted py-4"> <!-- footer  -->
 			<div class="container">
-				<div class="row text-white bg-dark py-1">
-					<div class="col-5">
-						<small class="text-white ml-4">Commandes franco de port</small>
+				<div class="row text-white bg-dark py-1 d-flex justify-content-center flex-wrap">
+					<div>
+						<small class="text-white mx-5">Franco de port</small>
 					</div>
-					<div class="col-4">
-						<small class="text-whites">Garantie 28 jours</small>
+					<div>
+						<small class="text-white mx-5">Garantie 28 jours</small>
 					</div>
-					<div class="col-3">
-						<small class="text-right mr-4">Consultez nos<i class="fas fa-chevron-right ml-2 mr-2"></i><a class="text-white" href="#">CGV</a></small>
+					<div>
+						<small class="mx-5">Lire nos<i class="fas fa-chevron-right ml-2 mr-2"></i><a class="text-white" href="#">CGV</a></small>
 					</div>
 				</div>
 			</div>

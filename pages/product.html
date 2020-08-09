@@ -51,24 +51,24 @@
 		</header> <!-- /header navbar toggle-->
 		<div class="container my-4">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-12 col-lg-3">
 					<a href="../index.html">
-					    <img src="../images/logo.png" class="img-fluid img-thumbnail" alt="logo de l'entreprise orinoco">
+					    <img src="../images/logo.png" class="img-fluid img-thumbnail mb-3" alt="logo de l'entreprise orinoco">
 					</a>
 				</div>
-				<div class="col-9">
+				<div class="col-12 col-lg-9">
 					<div class="row">
 						<div class="col-12 d-flex justify-content-center">
 							<nav aria-label="panier"> <!-- Breadcrumb -->
-								<ul class="pagination pagination-sm">
-									<li class="page-item">
-										<p class="page-link bg-info text-white ml-3 mr-3"><strong>valider votre panier</strong><i class="fas fa-chevron-down ml-2"></i></p>
+								<ul class="pagination pagination-sm d-flex flex-column flex-sm-row">
+									<li class="page-item mx-1">
+										<p class="page-link bg-info text-white text-center"><strong>Valider votre panier</strong><i class="fas fa-chevron-down ml-2"></i></p>
 									</li>
-									<li class="page-item">
-										<p class="page-link mr-3">passer votre commande<i class="fas fa-chevron-right ml-2"></i></p>
+									<li class="page-item mx-1">
+										<p class="page-link text-center">Passer votre commande<i class="fas fa-chevron-right ml-2"></i></p>
 									</li>
-									<li class="page-item">
-											<p class="page-link" mr-3>confirmation de commande<i class="fas fa-chevron-right ml-2"></i></p>
+									<li class="page-item mx-1">
+										<p class="page-link text-center">Confirmation de commande<i class="fas fa-chevron-right ml-2"></i></p>
 									</li>
 								</ul>
 							</nav> <!-- /Breadcrumb -->
@@ -82,13 +82,13 @@
 		</div>
 		<div class="container"> <!-- Header nav avec logo -->
    			<div class="row">
-			    <div class="col-3"> <!-- menu avec dropdown -->
-					<ul class="nav nav-tabs justify-content-center flex-column">
+			    <div class="col-12 col-lg-3 pb-3"> <!-- menu avec dropdown -->
+					<ul class="nav nav-tabs justify-content-center flex-lg-column flex-sm-row">
 						<li class="nav-item">
-							<a class="nav-link bg-info text-white mr-3" href="../index.html">ours en peluche</a>
+							<a class="nav-link bg-info text-white" href="../index.html">ours en peluche</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle mr-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">boutiquons ensemble</a>
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">boutiques</a>
 								<div class="dropdown-menu">
 									<a class="dropdown-item text-info" href="#">camera vintage</a>
 									<a class="dropdown-item text-info" href="#">meuble en chêne</a>
@@ -98,9 +98,9 @@
 								</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle mr-5" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ref</a>
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">infos</a>
 								<div class="dropdown-menu">
-									<a class="dropdown-item text-primary" href="#">quality</a>
+									<a class="dropdown-item text-primary" href="#">qualité</a>
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#">cgv</a>
 									<a class="dropdown-item" href="#">job</a>
@@ -108,17 +108,17 @@
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link" href="../pages/order.html">
-								<i class="fas fa-shopping-cart mr-2"></i>
+								<i class="fas fa-shopping-cart"></i>
 								<span id="basket">0</span>
 							</a>
 						</li>
 					</ul>
 				</div> <!-- /menu -->
-				<div class="col-9 py-2"> <!-- Affichage du produit -->
+				<div class=" col-12 col-lg-9 py-2"> <!-- Affichage du produit -->
 					<div class="container">
 						<div class="row pb-3">
-							<div class="col-3"></div>
-							<div class="col-6 album">
+							<div class="col-sm-2 col-lg-3"></div>
+							<div class="col-sm-8 col-lg-6 album">
 								<div class="card box-shadow">
 									<img class="card-img-top py-4" src="../images/teddy_1.jpg" alt="ours en peluche modèle classique">
 										<div class="card-body">
@@ -133,14 +133,16 @@
 												<div class="btn-group">
 														<button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='../pages/order.html';">Ajouter au panier</button>
 												</div>
-												<small class="text-muted">art : 1</small>
-												<small class="text-muted"> 29,99&#128;</small>
+											</div>
+											<div class="d-flex justify-content-end align-items-center pb-3">
+													<small class="text-muted mr-5">art : 1</small>
+													<small class="text-muted"> 29,99&#128;</small>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-1 align-self-end">
-									<button type="button" class="btn btn-info my-3" data-toggle="popover" data-placement="right" title="Choisir la quantité" data-content="Puis 'Ajouter au panier' pour passer à l'étape suivante"><i class="fas fa-info-circle"></i></button>
+								<div class="col-12 col-lg-1 align-self-end text-right">
+									<button type="button" class="btn btn-info my-3" data-toggle="popover" data-placement="top" title="Choisir la quantité" data-content="Puis 'Ajouter au panier' pour passer à l'étape suivante"><i class="fas fa-info-circle"></i></button>
 								</div>
 							</div>
 						</div>
@@ -150,15 +152,15 @@
 		</div> <!-- /Header nav avec logo -->
 		<footer class="text-muted py-4"> <!-- footer  -->
 			<div class="container">
-				<div class="row text-white bg-dark py-1">
-					<div class="col-5">
-						<small class="text-white ml-4">Commandes franco de port</small>
+				<div class="row text-white bg-dark py-1 d-flex justify-content-center flex-wrap">
+					<div>
+						<small class="text-white mx-5">Franco de port</small>
 					</div>
-					<div class="col-4">
-						<small class="text-whites">Garantie 28 jours</small>
+					<div>
+						<small class="text-white mx-5">Garantie 28 jours</small>
 					</div>
-					<div class="col-3">
-						<small class="text-right mr-4">Consultez nos<i class="fas fa-chevron-right ml-2 mr-2"></i><a class="text-white" href="#">CGV</a></small>
+					<div>
+						<small class="mx-5">Lire nos<i class="fas fa-chevron-right ml-2 mr-2"></i><a class="text-white" href="#">CGV</a></small>
 					</div>
 				</div>
 			</div>

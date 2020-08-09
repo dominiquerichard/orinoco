@@ -51,24 +51,24 @@
 		</header> <!-- /header navbar toggle-->
 		<div class="container my-4">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-12 col-lg-3 mb-3">
 					<a href="../index.html">
 					    <img src="../images/logo.png" class="img-fluid img-thumbnail" alt="logo de l'entreprise orinoco">
 					</a>
 				</div>
-				<div class="col-9">
+				<div class="col-12 col-lg-9">
 					<div class="row">
 						<div class="col-12 d-flex justify-content-center">
-							<nav aria-label="commande"> <!-- Breadcrumb -->
-								<ul class="pagination pagination-sm">
-									<li class="page-item">
-										<p class="page-link ml-3 mr-3">valider votre panier<i class="fas fa-chevron-right ml-2"></i></p>
+							<nav aria-label="panier"> <!-- Breadcrumb -->
+								<ul class="pagination pagination-sm d-flex flex-column flex-sm-row">
+									<li class="page-item mx-1">
+										<p class="page-link text-center">Valider votre panier<i class="fas fa-chevron-right ml-2"></i></p>
 									</li>
-									<li class="page-item">
-										<p class="page-link mr-3">passer votre commande<i class="fas fa-chevron-right ml-2"></i></p>
+									<li class="page-item mx-1">
+										<p class="page-link text-center">Passer votre commande<i class="fas fa-chevron-right ml-2"></i></p>
 									</li>
-									<li class="page-item">
-										<p class="page-link bg-info text-white" mr-3><strong>confirmation de commande</strong><i class="fas fa-chevron-down ml-2"></i></p>
+									<li class="page-item mx-1">
+										<p class="page-link bg-info text-white text-center">Confirmation de commande<strong><i class="fas fa-chevron-down ml-2"></i></strong></p>
 									</li>
 								</ul>
 							</nav> <!-- /Breadcrumb -->
@@ -83,13 +83,13 @@
 		</div>
 		<div class="container"> <!-- Header nav avec logo -->
    			<div class="row">
-			    <div class="col-3"> <!-- menu avec dropdown -->
-					<ul class="nav nav-tabs justify-content-center flex-column">
+			    <div class="col-12 col-lg-3 pb-3"> <!-- menu avec dropdown -->
+					<ul class="nav nav-tabs justify-content-center flex-lg-column flex-sm-row">
 						<li class="nav-item">
-							<a class="nav-link bg-info text-white mr-3" href="../index.html">ours en peluche</a>
+							<a class="nav-link bg-info text-white" href="../index.html">ours en peluche</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle mr-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">boutiquons ensemble</a>
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">boutiques</a>
 								<div class="dropdown-menu">
 									<a class="dropdown-item text-info" href="#">camera vintage</a>
 									<a class="dropdown-item text-info" href="#">meuble en chêne</a>
@@ -99,23 +99,23 @@
 								</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle mr-5" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ref</a>
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">infos</a>
 								<div class="dropdown-menu">
-									<a class="dropdown-item text-primary" href="#">quality</a>
+									<a class="dropdown-item text-primary" href="#">qualité</a>
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#">cgv</a>
 									<a class="dropdown-item" href="#">job</a>
 								</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#">
-								<i class="fas fa-shopping-cart mr-2"></i>
+							<a class="nav-link" href="../pages/order.html">
+								<i class="fas fa-shopping-cart"></i>
 								<span id="basket">0</span>
 							</a>
 						</li>
 					</ul>
 				</div> <!-- /menu -->
-				<div class="col-9">
+				<div class=" col-12 col-lg-9 py-2 px-5">
 					<div class="row">
 						<table class="table table-sm table-hover">
 							<caption>
@@ -125,7 +125,7 @@
 							<thead>
 								<tr class="bg-info text-center text-white">
 									<th>Articles</th>
-									<th>Quantité</th>
+									<th>Qté</th>
 									<th>Prix</th>
 									<th>Sous-total</th>
 									<th></th>

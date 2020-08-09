@@ -81,9 +81,9 @@
 				
 			</div>
 		</div>
-		<div class="container"> <!-- Header nav avec logo -->
+		<main class="container">
    			<div class="row">
-			    <div class="col-12 col-lg-3 pb-3"> <!-- menu avec dropdown -->
+			    <nav class="col-12 col-lg-3 pb-3"> <!-- menu avec dropdown -->
 					<ul class="nav nav-tabs justify-content-center flex-lg-column flex-sm-row">
 						<li class="nav-item">
 							<a class="nav-link bg-info text-white" href="../index.html">ours en peluche</a>
@@ -114,12 +114,14 @@
 							</a>
 						</li>
 					</ul>
-				</div> <!-- /menu -->
-				<div class=" col-12 col-lg-9 py-2 px-5">
+				</nav> <!-- /menu -->
+				<div class=" col-12 col-lg-9 py-2 px-5"> 
 					<div class="row">
-						<table class="table table-sm table-hover">
+						<table class="table table-sm table-hover"> <!-- tableau récapitulatif -->
 							<caption>
-								<small class="text-muted">Votre panier est prêt</small></caption>
+								<small class="text-muted">Votre panier est prêt</small><br>
+								<button type="button" class="btn btn-sm btn-dark mt-2" onclick="location.href='../index.html';">Poursuivre mes achats</button>
+							</caption>
 							<thead>
 								<tr class="bg-info text-center text-white">
 									<th>Articles</th>
@@ -133,7 +135,7 @@
 									<td>Le classique</td>
 									<td>1</td>
 									<td>29.99</td>
-									<td><button type="button" class="btn btn-sm btn-info">Suppr</button></td>
+									<td><button type="button" class="btn btn-sm btn-light">Suppr</button></td>
 								</tr>
 							</tbody>
 						</table>
@@ -141,17 +143,14 @@
 							<thead>
 								<tr>
 									<th>Total de la commande TTC</th>
-									<th>29.99&#128;</th>
+									<th>29.99&euro;</th>
 								</tr>
 							</thead>
-						</table>
-						<div class="col-12 text-right">
-							<button type="button" class="btn btn-sm btn-info" onclick="location.href='../index.html';">Poursuivre mes achats</button>
-						</div>
+						</table> <!-- /tableau récapitulatif -->
 						<div class="col-12">
 							<h2 class="lead text-center py-5"><strong>Adresse d'expédition :</strong></h2>
 						</div>
-						<div class="col-12">
+						<div class="col-12"> <!-- Formulaire de commande -->
 	   						<form>
 					    		<div class="form-row">
 					    			<div class="form-group col-md-6">
@@ -159,7 +158,7 @@
 					    				<input type="text" class="form-control" id="prenom" placeholder="Votre Prénom">
 									</div>
 					    			<div class="form-group col-md-6">
-					    				<label for="prenom">Nom</label>
+					    				<label for="nom">Nom</label>
 					    				<input type="text" class="form-control" id="nom" placeholder="Votre nom">
 									</div>
 								</div>
@@ -169,7 +168,7 @@
 										<input type="text" class="form-control" id="email" placeholder="exemple@email.com">
 									</div>
 									<div class="form-group col-md-4">
-										<label for="telephone">Téléphone</label>
+										<label for="tel">Téléphone</label>
 										<input type="text" class="form-control" id="tel" placeholder="06 xx xx xx xx">
 									</div>
 								</div>
@@ -186,28 +185,28 @@
 								<div class="form-row">
 									<div class="form-group col-md-5">
 						    			<label for="ville">Ville</label>
-						    			<input type="text" class="form-control" id="prenom" placeholder="Ville">
+						    			<input type="text" class="form-control" id="ville" placeholder="Ville">
 						    		</div>
 						    		<div class="form-group col-md-3">
-						    			<label for="codepostal">Code Postal</label>
+						    			<label for="cp">Code Postal</label>
 						    			<input type="text" class="form-control" id="cp" placeholder="XX 000">
 						    		</div>
 						    		<div class="form-group col-md-4">
 						    				<label for="pays">Pays</label>
-						    				<input type="text" class="form-control" id="cp" placeholder="Pays">
+						    				<input type="text" class="form-control" id="pays" placeholder="Pays">
 						    		</div>
 						    	</div>
 						    	<div class="form-check pb-5">
-						    		<input type="radio" name="btradio" id="oui" value="oui">
-						    		<label for="validationcgv" class="form-check-label">J'accepte sans réserves tous les termes présents dans les <a href="#" target="blank">Conditions Générales de Vente</a> d'Orinoco France</label>
+						    		<input type="radio" name="btradio" id="validation" value="validation">
+						    		<label for="validation" class="form-check-label" aria-label="condition générale de vente">J'accepte les <a href="#" target="blank">CGV</a> du site</label>
 						    	</div> <!-- type="button" à remplacer par type="submit" -->
 						    	<button type="button" class="btn btn-info float-right" onclick="location.href='../pages/confirmation.html';">Valider ma commande</button>
 						    </form>
-					    </div>
+					    </div> <!-- /Formulaire de commande -->
 					</div>
 			    </div>
 			</div>
-		</div>
+		</main>
 		<footer class="text-muted py-4"> <!-- footer  -->
 			<div class="container">
 				<div class="row text-white bg-dark py-1 d-flex justify-content-center flex-wrap">
